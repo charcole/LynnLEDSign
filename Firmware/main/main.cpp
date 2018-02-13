@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
 extern "C"
 {
 #include "freertos/FreeRTOS.h"
@@ -169,12 +170,43 @@ enum EState
 	State_Max
 };
 
+int StateList[]=
+{
+	State_Write,
+	State_Emit,
+	State_Sweep,
+	State_Emit,
+	State_Letters,
+	State_Sweep,
+	State_Emit,
+	State_Sweep
+};
+
+int StateRandom[]=
+{
+	State_Letters,
+	State_Emit,
+	State_Sweep,
+	State_Emit,
+	State_Sweep,
+	State_Letters,
+	State_Sweep,
+	State_Emit,
+	State_Write
+};
+
+#define ARRAY_SIZEOF(x) (sizeof(x)/sizeof((x)[0]))
+
 void DrawingTask(void *pvParameters)
 {
 	printf("DrawingTask running on core %d\n", xPortGetCoreID());
+	
+	vTaskDelay(1000);
 
-	int State = 0;
-
+	int State = StateList[0];
+	int StateIndex = 1;
+	int LastRandomIndex = -1;
+					
 	while (true)
 	{
 		switch (State)
@@ -182,22 +214,24 @@ void DrawingTask(void *pvParameters)
 			case State_Write:
 			{
 				int WriteCount = sizeof(Write) / sizeof(Write[0]);
-				for (int Phase = -8; Phase < WriteCount + 2; Phase++)
+				for (int Phase = -16; Phase < WriteCount + 2; Phase++)
 				{
-					int Brightness = 4;
-					for (int i = 0; i < 7; i++)
+					int Brightness = 0;
+					for (int i = 0; i < 16; i++)
 					{
 						if (Phase + i < WriteCount && Phase + i >= 0)
 						{
 							int LED = 47 - Write[Phase + i];
 							if (LED >= 0 && LED < 48)
 							{
-								PWMSteps[LED] = Brightness;
+								int Value = (Brightness * Brightness) >> 8;
+								Value = (Value * Value) >> 8;
+								PWMSteps[LED] = 4 + Value;
 							}
 						}
-						Brightness <<= 1;
+						Brightness += 15;
 					}
-					vTaskDelay(48);
+					vTaskDelay(40);
 				}
 				break;
 			}
@@ -314,7 +348,21 @@ void DrawingTask(void *pvParameters)
 			}
 		}
 
-		State = rand() % State_Max;
+		if (StateIndex < ARRAY_SIZEOF(StateList))
+		{
+			State = StateList[StateIndex];
+			StateIndex++;
+		}
+		else
+		{
+			int RandomIndex;
+			do
+			{
+				RandomIndex = rand() % ARRAY_SIZEOF(StateRandom);
+			} while (RandomIndex == LastRandomIndex);
+			LastRandomIndex = RandomIndex;
+			State = StateRandom[RandomIndex];
+		}
 	}
 }
 
@@ -323,11 +371,12 @@ void InitializeGPIO()
 {
 	gpio_config_t GPIOConfig;
 	GPIOConfig.intr_type = GPIO_INTR_DISABLE;
-	GPIOConfig.pin_bit_mask = BIT(OUT_CLOCK);
+	GPIOConfig.pin_bit_mask = BIT(OUT_ENABLE);
 	GPIOConfig.mode = GPIO_MODE_OUTPUT;
 	GPIOConfig.pull_up_en = GPIO_PULLUP_DISABLE;
 	GPIOConfig.pull_down_en = GPIO_PULLDOWN_DISABLE;
 	gpio_config(&GPIOConfig);
+	gpio_set_level(OUT_ENABLE, 1);
 
 	GPIOConfig.pin_bit_mask = BIT(OUT_LATCH);
 	gpio_config(&GPIOConfig);
@@ -335,18 +384,21 @@ void InitializeGPIO()
 	GPIOConfig.pin_bit_mask = BIT(OUT_DATA);
 	gpio_config(&GPIOConfig);
 	
-	GPIOConfig.pin_bit_mask = BIT(OUT_ENABLE);
+	GPIOConfig.pin_bit_mask = BIT(OUT_CLOCK);
 	gpio_config(&GPIOConfig);
-	gpio_set_level(OUT_ENABLE, 1);
 }
 
 extern "C" void app_main(void)
 {
+	InitializeGPIO();
+
 	// Magic non-sense to make second core work
 	vTaskDelay(500 / portTICK_PERIOD_MS);
 	nvs_flash_init();
 
-	InitializeGPIO();
+	memset(PWMState, 0, sizeof(PWMState));
+	memset(PWMCounters, 0, sizeof(PWMCounters));
+	memset(PWMSteps, 0, sizeof(PWMSteps));
 
 	xTaskCreatePinnedToCore(&DrawingTask, "DrawingTask", 8192, NULL, 5, NULL, 0);
 	xTaskCreatePinnedToCore(&PWMTask, "PWMTask", 8192, NULL, 5, NULL, 1);
