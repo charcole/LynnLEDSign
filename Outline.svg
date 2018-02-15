@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="lynn_outline.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="265.48236"
+     inkscape:cy="957.51726"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="708"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     inkscape:measure-start="0,0"
+     inkscape:measure-end="0,0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Edge.Cuts"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <g
+       aria-label="Lynn"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:33.83489609px;line-height:1.25;font-family:SignPainter;-inkscape-font-specification:SignPainter;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.8458724"
+       id="text12" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.45289043px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 36.03392,53.224513 c 0.837221,-13.053574 13.470404,-35.434637 19.040688,-35.234285 6.662281,0.240317 2.131666,12.867656 8.395654,14.201961 9.948887,0.988966 48.239518,-5.147694 61.486448,-0.320242 4.46088,1.625635 4.49024,4.274462 4.33012,12.760873 -0.16011,8.486409 -0.16698,15.580535 -6.09145,15.740655 -5.92448,0.160131 -48.997013,0.160131 -48.997013,0.160131 0,0 -3.20242,16.012094 -9.767379,19.374634 C 57.866033,83.27078 54.34337,83.591022 50.020104,80.388603 45.69684,77.186183 53.542763,59.252636 53.542763,59.252636 40.8925,65.450736 35.807691,63.6045 36.03392,53.224513 Z"
+       id="path855"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccscccsscc" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.265;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect23"
+       width="100"
+       height="70"
+       x="32.808334"
+       y="15.747916" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="SilkS">
+    <g
+       aria-label="Lynn"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.82871628px;line-height:1.25;font-family:SignPainter;-inkscape-font-specification:SignPainter;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.44121537"
+       id="text911">
+      <path
+         d="M 41.545772,53.693427 C 45.899097,44.280832 51.25251,35.22121 54.311603,29.632482 56.72358,25.279157 56.488265,22.808351 55.782321,21.337633 55.429349,20.57286 54.89989,20.514031 54.370432,21.219975 50.78188,26.220416 41.075142,44.045517 38.251363,51.340278 c -0.588287,1.529547 -0.588287,2.411978 -0.176486,3.412066 0.294144,0.705944 1.000088,1.764861 1.529547,2.529635 0.647116,0.941259 1.235403,0.941259 2.647292,0.588287 3.412066,-0.882431 9.883224,-2.353149 12.82466,-2.29432 0.764774,0 0.764774,-0.411801 0.588287,-0.882431 -0.647115,-1.764861 -2.235491,-2.882607 -5.176927,-2.647292 -2.235491,0.176486 -5.588728,0.764773 -8.941964,1.647204 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.82871628px;font-family:SignPainter;-inkscape-font-specification:SignPainter;stroke-width:0.44121537"
+         id="path913" />
+      <path
+         d="m 81.814948,51.281449 c 1.000088,-1.529546 1.176574,-2.882607 1.058917,-3.412065 -0.117658,-0.588287 -0.647116,-0.529459 -0.94126,-0.117658 -2.353148,3.23558 -5.824043,6.588817 -10.412683,9.059623 2.470807,-5.706386 6.059358,-12.765832 7.82422,-16.177897 1.529546,-3.000265 1.058917,-5.5299 0.235315,-6.588816 -0.529459,-0.47063 -0.94126,-0.352973 -1.470718,0.411801 -2.059005,3.000264 -4.58864,8.294849 -7.118275,12.648174 -3.000265,5.118098 -5.9417,8.883136 -8.23602,8.70665 -1.353061,-0.117658 -1.470718,-2.176663 -0.294144,-5.05927 1.117746,-2.76495 2.411977,-5.176927 4.529811,-8.588993 2.176663,-3.470894 2.529635,-5.9417 1.117746,-7.824219 -0.411801,-0.588287 -1.000088,-0.647116 -1.470718,0 -3.823867,5.294585 -6.706474,11.118628 -8.000705,14.883665 -1.353061,3.882696 -1.235403,8.177192 3.000264,8.530164 2.353149,0.176486 4.58864,-1.35306 6.41233,-3.235579 -0.647116,1.411889 -1.235403,2.882607 -1.82369,4.235667 -5.824043,2.29432 -10.824484,5.824043 -12.589345,11.118628 -1.176575,3.470894 0,5.529899 1.176574,7.294761 1.117746,1.647204 2.235491,1.647204 3.353237,1.235403 4.882783,-1.882519 9.059622,-11.353943 12.35403,-19.236991 4.882784,-2.000176 9.000794,-4.235667 11.295114,-7.883048 z M 65.22525,61.223503 c -3.647381,8.647821 -8.471335,15.060151 -9.236109,13.942405 -1.058917,-1.470718 1.588376,-9.530252 9.236109,-13.942405 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.82871628px;font-family:SignPainter;-inkscape-font-specification:SignPainter;stroke-width:0.44121537"
+         id="path915" />
+      <path
+         d="m 90.580426,39.692192 c 0.647116,-2.117833 0.705945,-4.11801 -0.176486,-5.588728 -0.352972,-0.588287 -0.823602,-0.647116 -1.235403,0 -3.706209,5.471071 -8.23602,13.648262 -9.412595,17.354472 -0.941259,2.941435 -0.588287,4.882783 0.588287,6.059357 0.529459,0.529459 0.882431,0.294144 1.117746,-0.235314 2.529635,-5.5299 5.118098,-11.177457 8.588993,-14.942494 3.765037,-4.118011 7.177103,-5.765215 7.76539,-5.5299 1.058917,0.47063 -4.11801,6.706474 -6.059358,12.471688 -1.706032,5.118098 -0.529458,8.765479 4.470983,8.765479 3.412065,0 7.118277,-3.000265 8.706647,-6.294673 0.8236,-1.706033 0.94126,-3.059093 0.52946,-3.706209 -0.29414,-0.47063 -0.70594,-0.47063 -1.00009,0.05883 -2.23549,4.11801 -5.118095,8.000705 -7.530073,8.118363 -2.117833,0.117657 -2.470806,-2.647293 -0.941259,-6.059358 1.35306,-3.059093 4.235672,-7.412418 5.471072,-10.000882 1.47072,-3.059093 -0.35297,-5.9417 -2.294321,-6.235844 -1.941348,-0.294143 -5.941701,2.941436 -8.588993,5.765214 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.82871628px;font-family:SignPainter;-inkscape-font-specification:SignPainter;stroke-width:0.44121537"
+         id="path917" />
+      <path
+         d="m 113.21569,39.692192 c 0.64712,-2.117833 0.70595,-4.11801 -0.17648,-5.588728 -0.35298,-0.588287 -0.82361,-0.647116 -1.23541,0 -3.70621,5.471071 -8.23602,13.648262 -9.41259,17.354472 -0.94126,2.941435 -0.58829,4.882783 0.58828,6.059357 0.52946,0.529459 0.88244,0.294144 1.11775,-0.235314 2.52964,-5.5299 5.1181,-11.177457 8.58899,-14.942494 3.76504,-4.118011 7.17711,-5.765215 7.76539,-5.5299 1.05892,0.47063 -4.11801,6.706474 -6.05935,12.471688 -1.70604,5.118098 -0.52946,8.765479 4.47098,8.765479 3.41206,0 7.11827,-3.000265 8.70665,-6.294673 0.8236,-1.706033 0.94126,-3.059093 0.52946,-3.706209 -0.29415,-0.47063 -0.70595,-0.47063 -1.00009,0.05883 -2.23549,4.11801 -5.1181,8.000705 -7.53008,8.118363 -2.11783,0.117657 -2.4708,-2.647293 -0.94126,-6.059358 1.35306,-3.059093 4.23567,-7.412418 5.47107,-10.000882 1.47072,-3.059093 -0.35297,-5.9417 -2.29432,-6.235844 -1.94134,-0.294143 -5.9417,2.941436 -8.58899,5.765214 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.82871628px;font-family:SignPainter;-inkscape-font-specification:SignPainter;stroke-width:0.44121537"
+         id="path919" />
+    </g>
+  </g>
+</svg>
