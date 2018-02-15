@@ -1,6 +1,6 @@
 (export (version D)
   (design
-    (source /Users/charlie/github/MiniGun/Untitled.sch)
+    (source /Users/charlie/github/MiniGun/Lynn.sch)
     (date "Tuesday, 30 January 2018 'pmt' 23:00:15")
     (tool "Eeschema 4.0.6")
     (sheet (number 1) (name /) (tstamps /)
@@ -9,7 +9,7 @@
         (company)
         (rev)
         (date)
-        (source Untitled.sch)
+        (source Lynn.sch)
         (comment (number 1) (value ""))
         (comment (number 2) (value ""))
         (comment (number 3) (value ""))
